@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function(e) {
                 <img src="${player.photo}" alt="${player.name}">
             `
             const contatiner = document.querySelector(".player-container");
-            contatiner.append(div);
+            contatiner.insertAdjacentElement('beforeend', div);
+            //contatiner.append(div);
         };
     };
     
