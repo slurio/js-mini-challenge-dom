@@ -26,7 +26,8 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+console.log wasn't getting header value because it was running before HTML loaded
+added DomContentLoaded as an event listner so console.log header wll not run until HTML is fully loaded 
 ```
 
 ## Deliverable 2
@@ -35,7 +36,9 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
+I first made a function called redHeader with argument of headerElement. Within the block I change the text color to red by calling .style.color on the argument and equalling it to "red"
 
+After function is declared I call it with the header as an argument
 ```
 
 ## Deliverable 3
